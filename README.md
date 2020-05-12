@@ -4,7 +4,7 @@ python 项目的公共包。
 | 包            | 工具类  | 功能           | 详细说明                                |
 | -------------- | ---------- | ---------------- | ------------------------------------------- |
 | feedwork.utils | Constant   | 定义程序中的常量 | const.NAME = "fd" ： 定义了一个常量 |
-| feedwork.utils | Logger     | 日志处理     | LOG.debug("......")  ,  LOG.error("......") |
+| feedwork.utils | Logger     | 日志处理     | LOG.debug("......")  <br>  LOG.error("......") |
 | feedwork.utils | DateHelper | 日期时间处理 | dtime.getSysDate()  # 得到系统当前日期 |
 
 ## 安装
