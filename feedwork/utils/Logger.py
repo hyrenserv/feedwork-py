@@ -6,7 +6,7 @@ import logging
 
 """
 用法：
-import feedwork.utils.logger as logger
+import feedwork.utils.Logger as logger
 LOG = logger.Logger("debug")
 
 LOG.critical("这是一个 critical 级别的问题！")
