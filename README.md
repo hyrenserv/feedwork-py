@@ -1,5 +1,11 @@
 # feedwork
-python 项目的公共包
+python 项目的公共包。
+
+| 包            | 工具类  | 功能           |
+| -------------- | ---------- | ---------------- |
+| feedwork.utils | Constant   | 定义程序中的常量 |
+| feedwork.utils | Logger     | 日志处理     |
+| feedwork.utils | DateHelper | 日期时间处理 |
 
 ## 安装
 ### 开发环境的安装方式
