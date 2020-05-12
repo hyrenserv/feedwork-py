@@ -4,7 +4,7 @@ python 项目的公共包
 ## 安装
 ### 开发环境的安装方式
 ```shell
-python3 -m pip install git+http://139.9.126.19:38111/hyren/feedwork-py.git
+python3 -m pip install -U git+http://139.9.126.19:38111/hyren/feedwork-py.git
 ```
 
 ### 部署发布的安装方式
