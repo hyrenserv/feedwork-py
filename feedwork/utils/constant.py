@@ -24,5 +24,4 @@ class _Const(object):
     #     else:
     #         return None
 
-print(f"======= constant : name={__name__}")
 sys.modules[__name__] = _Const()
