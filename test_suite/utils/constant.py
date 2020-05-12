@@ -28,4 +28,4 @@ except const.ConstError as ex:
 assert const.NAME == "fd"
 assert const.VALUE == 5
 
-print(f"[TEST] {os.path.basename(sys.argv[0]):15s}>> passed.")
+print(f"[TEST] {os.path.basename(sys.argv[0]):20s}>> passed.")
