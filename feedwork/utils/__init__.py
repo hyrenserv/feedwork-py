@@ -5,6 +5,9 @@ import datetime
 from loguru import logger
 
 print(f"feedwork.utils imported at : {datetime.datetime.now()}")
+
+# ==== 日志处理 ====
+# 使用方式： from feedwork.utils import logger 即可使用logger对象了
 __all__ = ["logger"]
 
 HR_RUN_PROD = _os.getenv("HR_RUN_PROD", "n")
