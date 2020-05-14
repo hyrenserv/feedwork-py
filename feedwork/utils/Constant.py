@@ -4,7 +4,7 @@ import sys
 class _Const(object):
     """
     用法：
-    import feedwork.utils.constant as const
+    import feedwork.utils.Constant as const
     const.NAME = "fd"
     const.VALUE = 5
     """
@@ -23,5 +23,6 @@ class _Const(object):
     #         return self.name
     #     else:
     #         return None
+
 
 sys.modules[__name__] = _Const()
