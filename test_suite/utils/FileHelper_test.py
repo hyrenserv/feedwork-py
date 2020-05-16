@@ -1,5 +1,8 @@
-import pytest
 import os
+import sys
+
+import pytest
+
 import feedwork.utils.FileHelper as fileu
 
 
@@ -39,3 +42,7 @@ def test_write():
         assert len(lines) == 2
         assert lines[0] == "1\n"
         assert lines[1] == "  \n"
+
+
+if __name__ == "__main__":
+    pytest.main(["-q", os.path.basename(sys.argv[0])])

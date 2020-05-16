@@ -25,14 +25,14 @@ import time
 """
 
 
-def getSysDate(ft=None):
+def sys_date(ft=None):
     if ft:
         return time.strftime(ft, time.localtime(time.time()))
     else:
         return time.strftime("%Y%m%d", time.localtime(time.time()))
 
 
-def getSysTime(ft=None):
+def sys_time(ft=None):
     if ft:
         return time.strftime(ft, time.localtime(time.time()))
     else:
