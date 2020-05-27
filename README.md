@@ -3,9 +3,11 @@ python 项目的公共包。
 
 | 包            | 工具类  | 功能           | 详细说明                                |
 | -------------- | ---------- | ---------------- | ------------------------------------------- |
-| utils | Constant   | 定义程序中的常量 | import feedwork.utils.Constant as const <br> const.NAME = "fd" # 定义了一个常量 |
 | utils | logger     | 日志处理     | from feedwork.utils import logger <br> logger.debug("......") |
-| utils | DateHelper | 日期时间处理 | import feedwork.utils.DateHelper as dtime <br> dtime.getSysDate()  # 得到系统当前日期 |
+| utils | Constant   | 定义程序中的常量 | import feedwork.utils.Constant as const <br> const.NAME = "fd" # 定义了一个常量 |
+| utils | DateHelper | 日期时间处理 | import feedwork.utils.DateHelper as dateu <br> dateu.sys_date()  # 得到系统当前日期 |
+| utils | FileHelper | 文件处理 | import feedwork.utils.FileHelper as fileu <br> fileu.linecount()  # 得到文件行数 |
+| utils | System | 操作系统环境处理 | import feedwork.utils.System as sysu <br> PATH = sysu.env("PATH", str)  # 得到PATH环境变量 |
 
 ## 安装
 ### 开发环境的安装方式

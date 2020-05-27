@@ -1,14 +1,24 @@
-.git*
-!.gitignore
 /TODO.md
 
-*.log
-*.out
+# git file
+.git*
+!.gitignore
 
-*.gz
+# package file
 *.zip
+*.gz
 *.bz2
 *.rar
+*.tar
+*.xz
+
+# temp file
+*.log
+*.out
+*.cache
+*.diff
+*.patch
+*.tmp
 
 # Office
 ~'$'*.doc
@@ -18,15 +28,30 @@
 ~'$'*.xls
 ~'$'*.xlsx
 
+# ---> VisualStudioCode
+.settings
+.vscode*
+
+# ---> Linux
+*~
+*.o
+*.so
+.Trash-*
+
+# system ignore
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+*.dll
+*.exe
+
 # ---> Python
 .idea/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
-*.so
 
 # Distribution / packaging
 .Python
@@ -75,13 +100,4 @@ docs/_build/
 
 # PyBuilder
 target/
-
-# ---> Linux
-*~
-
-# KDE directory preferences
-.directory
-
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
 
