@@ -9,7 +9,7 @@ HRS_RESOURCES_ROOT = sysu.env("HRS_RESOURCES_ROOT", str)  # 所有资源根目�
 if not os.path.isdir(HRS_RESOURCES_ROOT):
     raise RuntimeError(f"env [HRS_RESOURCES_ROOT={HRS_RESOURCES_ROOT}] is not regular dir !")
 _HRS_FDCONFIG_ROOT = os.path.join(HRS_RESOURCES_ROOT, "fdconfig")
-logger.debug(f"[load_conf] _HRS_FDCONFIG_ROOT={_HRS_FDCONFIG_ROOT}")
+logger.info(f"[load_conf] _HRS_FDCONFIG_ROOT={_HRS_FDCONFIG_ROOT}")
 
 
 class AutowaredBeanByDict(dict):
@@ -18,7 +18,6 @@ class AutowaredBeanByDict(dict):
 
 
 def dictToBean(dictObj):
-#     print(type(dictObj), dictObj)
     if not isinstance(dictObj, dict):
         return dictObj
     inst = AutowaredBeanByDict()
@@ -32,7 +31,7 @@ def load_conf(filename :str, *, return_type="bean"):
         raise RuntimeError(f"config file [{conf_file}] is not regular file !")
     with open(conf_file, "r") as f:
         data = yaml.safe_load(f)
-#         print(conf_file, type(data), data)
+
     if return_type == "bean":
         return dictToBean(data)
     elif return_type == "dict":
